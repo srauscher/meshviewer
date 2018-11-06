@@ -22,10 +22,10 @@ module.exports = function () {
         'name': 'node.coordinates',
         'value': 'GeoURI'
       },
-      //    {
-      //      "name": "node.contact",
-      //      "value": "owner"
-      //    },
+//      {
+//         "name": "node.contact",
+//         "value": "owner"
+//      },
 
       // Examples for functions
       // {
@@ -63,6 +63,14 @@ module.exports = function () {
       {
         'name': 'node.firstSeen',
         'value': 'FirstSeen'
+      },
+      {
+        'name': 'node.airtime2',
+        'value': 'Airtime2'
+      },
+      {
+        'name': 'node.airtime5',
+        'value': 'Airtime5'
       },
       {
         'name': 'node.systemLoad',
