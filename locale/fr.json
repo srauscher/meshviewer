@@ -33,7 +33,9 @@
     "link": "Connexion |||| Connexions",
     "node": "Nœud |||| Nœuds",
     "new": "Nouveaux nœuds",
-    "missing": "Nœuds disparus"
+    "missing": "Nœuds disparus",
+    "airtime2": "Airtime 2.4 GHz",
+    "airtime5": "Airtime 5 GHz"
   },
   "location": {
     "location": "Lieu",

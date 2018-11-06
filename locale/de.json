@@ -27,13 +27,15 @@
     "systemLoad": "Systemlast",
     "ram": "Speicherauslastung",
     "ipAddresses": "IP Adressen",
-    "nexthop": "Nächster Sprung",
+    "nexthop": "Nächster Hop",
     "selectedGatewayIPv4": "Gewähltes ipv4 Gateway",
     "selectedGatewayIPv6": "Gewähltes ipv6 Gateway",
     "link": "Verbindung |||| Verbindungen",
     "node": "Knoten",
     "new": "Neue Knoten",
-    "missing": "Verschwundene Knoten"
+    "missing": "Verschwundene Knoten",
+    "airtime2": "Airtime 2.4 GHz",
+    "airtime5": "Airtime 5 GHz"
   },
   "location": {
     "location": "Standort",

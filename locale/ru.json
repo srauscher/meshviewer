@@ -33,7 +33,9 @@
     "link": "Ссылка |||| Ссылки",
     "node": "Узел |||| Узлы",
     "new": "Новые узлы",
-    "missing": "Исчезнувшие узлы"
+    "missing": "Исчезнувшие узлы",
+    "airtime2": "Airtime 2.4 GHz",
+    "airtime5": "Airtime 5 GHz"
   },
   "location": {
     "location": "Расположение",

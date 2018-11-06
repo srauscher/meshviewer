@@ -33,7 +33,9 @@
     "link": "Link |||| Links",
     "node": "Node |||| Nodes",
     "new": "New nodes",
-    "missing": "Disappeared nodes"
+    "missing": "Disappeared nodes",
+    "airtime2": "Airtime 2.4 GHz",
+    "airtime5": "Airtime 5 GHz"
   },
   "location": {
     "location": "Location",

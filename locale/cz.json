@@ -33,7 +33,9 @@
     "link": "Odkaz ||| Odkazy",
     "node": "Uzel ||| Uzly",
     "new": "Nové uzly",
-    "missing": "Zmizelé uzly"
+    "missing": "Zmizelé uzly",
+    "airtime2": "Airtime 2.4 GHz",
+    "airtime5": "Airtime 5 GHz"
   },
   "location": {
     "location": "Poloha",

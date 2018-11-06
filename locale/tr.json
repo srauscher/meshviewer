@@ -33,7 +33,9 @@
     "link": "Bağlantı ||| Bağlantılar",
     "node": "Düğüm ||| Düğümler",
     "new": "Yeni düğümler",
-    "missing": "Kaybolan düğümler"
+    "missing": "Kaybolan düğümler",
+    "airtime2": "Airtime 2.4 GHz",
+    "airtime5": "Airtime 5 GHz"
   },
   "location": {
     "location": "Konum",
