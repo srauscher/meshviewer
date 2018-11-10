@@ -103,93 +103,96 @@ module.exports = function () {
         'site': 'ff3l',
         'domain': 'default',
         'name': 'Freifunk Dreiländereck',
-        'url': '/ff3l/'
+        'url': 'https://map.freifunk-3laendereck.net/ff3l/'
       },
       {
         'site': 'ff3l-hoho',
         'domain': 'hoho',
         'name': 'Hochrhein-Hotzenwald',
-        'url': '/ff3l-hoho/'
+        'url': 'https://map.freifunk-3laendereck.net/ff3l-hoho/'
       },
       {
         'site': 'ff3l-wtk',
         'domain': 'wtk',
         'name': 'Waldshut-Tiengen-Klettgau',
-        'url': '/ff3l-wtk/'
+        'url': 'https://map.freifunk-3laendereck.net/ff3l-wtk/'
       },
       {
         'site': 'ff3l-wald',
         'domain': 'wald',
         'name': 'Südschwarzwald',
-        'url': '/ff3l-wald/'
+        'url': 'https://map.freifunk-3laendereck.net/ff3l-wald/'
       },
       {
         'site': 'ff3l-wiese',
         'domain': 'wiese',
         'name': 'Wiesental',
-        'url': '/ff3l-wiese/'
+        'url': 'https://map.freifunk-3laendereck.net/ff3l-wiese/'
       },
       {
         'site': 'ff3l-loe',
         'domain':'loe',
         'name': 'Lörrach-Oberrhein',
-        'url': '/ff3l-loe/'
+        'url': 'https://map.freifunk-3laendereck.net/ff3l-loe/'
       },
       {
         'site': 'ff3l-3land',
         'domain':'3land',
         'name': 'Dreiland',
-        'url': '/ff3l-3land/'
+        'url': 'https://map.freifunk-3laendereck.net/ff3l-3land/'
       },
       {
         'site': 'ff3l-ref',
         'domain': 'ref',
         'name': 'Refugees',
-        'url': '/ff3l-ref/'
+        'url': 'https://map.freifunk-3laendereck.net/ff3l-ref/'
       },
       {
         'site': 'ff3l-test',
         'domain': 'test',
         'name': 'Testnetz',
-        'url': '/ff3l-test/'
+        'url': 'https://map.freifunk-3laendereck.net/ff3l-test/'
       },
       {
         'site': 'ff3l-nalb',
         'domain': 'nalb',
         'name': 'Neckar-Alb',
-        'url': '/ff3l-nalb/'
+        'url': 'https://map.freifunk-3laendereck.net/ff3l-nalb/'
       },
       {
         'site': 'ff3l-swb',
         'domain': 'swb',
         'name': 'Schwarzwald-Baar',
-        'url': '/ff3l-swb/'
+        'url': 'https://map.freifunk-3laendereck.net/ff3l-swb/'
       },
       {
         'site': 'ff3l-ng',
         'domain': 'ffng',
         'name': 'Nordschwarzwald-Gäu',
-        'url': '/ffng/'
+        'url': 'https://map.freifunk-3laendereck.net/ffng/'
       },
       {
         'site': 'fftut',
         'domain': 'fftut',
         'name': 'Tuttlingen',
-        'url': '/fftut/'
+        'url': 'https://map.freifunk-3laendereck.net/fftut/'
       }
     ],
     'linkList': [
       {
         'title': 'Impressum',
-        'href': 'https://freifunk-3laendereck.net/impressum-mehr/'
+        'href': 'https://freifunk-3laendereck.net/impressum-mehr/',
+        'target': '_blank'
       },
       {
         'title': 'Datenschutz',
-        'href': 'https://freifunk-3laendereck.net/rechtliche-hinweise/'
+        'href': 'https://freifunk-3laendereck.net/rechtliche-hinweise/',
+        'target': '_blank'
       },
       {
         'title': 'Knotenliste',
-        'href': 'https://www.knotenliste.de/index.html'
+        'href': 'https://www.knotenliste.de/index.html',
+        'target': '_blank'
       }
     ]
   };
