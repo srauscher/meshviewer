@@ -94,6 +94,10 @@ module.exports = function () {
         7.9994
       ]
     ],
+    'allCommunities': {
+      'name': 'Gesamtkarte',
+      'url': '/'
+    },
     'domainNames': [
       {
         'site': 'ff3l',
