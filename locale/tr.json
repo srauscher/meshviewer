@@ -56,7 +56,8 @@
     "actual": "Mevcut",
     "stats": "İstatistikler",
     "about": "Hakkında",
-    "toggle": "Kenar çubuğunu değiştir"
+    "toggle": "Kenar çubuğunu değiştir",
+    "yourCommunity": "Your Community: "
   },
   "button": {
     "switchView": "Görünümü Değiştir",

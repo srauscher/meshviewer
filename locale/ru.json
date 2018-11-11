@@ -56,7 +56,8 @@
     "actual": "Текущее",
     "stats": "Статистика",
     "about": "О продукте",
-    "toggle": "Включить панель"
+    "toggle": "Включить панель",
+    "yourCommunity": "Your Community: "
   },
   "button": {
     "switchView": "Переключить вид",

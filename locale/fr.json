@@ -56,7 +56,8 @@
     "actual": "Actuel",
     "stats": "Statistiques",
     "about": "À propros",
-    "toggle": "Toggle Sidebar"
+    "toggle": "Toggle Sidebar",
+    "yourCommunity": "Your Community: "
   },
   "button": {
     "switchView": "Basculer l’affichage",
