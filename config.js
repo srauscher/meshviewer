@@ -194,6 +194,48 @@ module.exports = function () {
         'href': 'https://www.knotenliste.de/index.html',
         'target': '_blank'
       }
+    ],
+    geo: [
+      {
+        json: function () {
+          return require('helper').getJSON('https://geojson.freifunkkarte.de/hoho.geojson').then(function (result) {
+            return result.features ? result.features : false;
+          }, function () {
+            return false;
+          });
+        },
+        option: {
+          style: {
+            color: '#e23535',
+            weight: 5,
+            opacity: 0.4,
+            fill: false,
+//            fillColor: '#6de922',
+//            fillOpacity: 0.05,
+            interactive: false
+          }
+        }
+      },
+      {
+        json: function () {
+          return require('helper').getJSON('https://geojson.freifunkkarte.de/3land.geojson').then(function (result) {
+            return result.features ? result.features : false;
+          }, function () {
+            return false;
+          });
+        },
+        option: {
+          style: {
+            color: '#6de922',
+            weight: 5,
+            opacity: 0.4,
+            fill: false,
+//            fillColor: '#e23535',
+//            fillOpacity: 0.05,
+            interactive: false
+          }
+        }
+      }
     ]
   };
 };
