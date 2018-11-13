@@ -38,13 +38,13 @@ $grid-breakpoints: (
   // Large screen / desktop
   lg: 992px,
   // Extra large screen / wide desktop
-  xl: 1200px
+  xl: 1280px
 ) !default;
 
 // 45% sidebar - based on viewport
 // In lib/sidebar to avoid render blocking onload
-$sidebar-width: map-get($grid-breakpoints, xl) * .45 !default;
-$sidebar-width-small: map-get($grid-breakpoints, lg) * .45 !default;
+$sidebar-width: map-get($grid-breakpoints, xl) * .4375 !default;
+$sidebar-width-small: map-get($grid-breakpoints, lg) * .43 !default;
 
 // En/disable included font
 $use-included-font: 1 !default;
