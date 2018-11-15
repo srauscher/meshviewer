@@ -14,13 +14,13 @@ module.exports = function () {
         'name': 'Tagesstatistik',
         'href': 'https://map.freifunk-3laendereck.net/grafana/dashboard/db/freifunk-dreilandereck-history?theme=light',
         'image': 'https://map.freifunk-3laendereck.net/grafana/render/d-solo/000000008/freifunk-dreilandereck-history?refresh=5m&orgId=1&panelId=1&width=528&height=290&theme=light',
-        'caption': 'Bild mit Tagesstatistik'
+        'title': 'Bild mit Tagesstatistik'
       },
       {
         'name': 'Wochenstatistik',
         'href': 'https://map.freifunk-3laendereck.net/grafana/dashboard/db/freifunk-dreilandereck-history?theme=light',
         'image': 'https://map.freifunk-3laendereck.net/grafana/render/d-solo/000000008/freifunk-dreilandereck-history?refresh=5m&orgId=1&panelId=2&width=528&height=290&theme=light',
-        'caption': 'Bild mit Wochenstatistik'
+        'title': 'Bild mit Wochenstatistik'
       }
     ],
     // Array of data provider are supported
@@ -85,12 +85,12 @@ module.exports = function () {
     'fixedCenter': [
       // Northwest
       [
-        47.7079,
+        47.8795,
         7.5407
       ],
       // Southeast
       [
-        47.5320,
+        47.5042,
         7.9994
       ]
     ],
@@ -102,6 +102,12 @@ module.exports = function () {
       {
         'site': 'ff3l',
         'domain': 'default',
+        'name': 'Freifunk Dreiländereck',
+        'url': 'https://map.freifunk-3laendereck.net/ff3l/'
+      },
+      {
+        'site': 'ff3l',
+        'domain': 'ff3l',
         'name': 'Freifunk Dreiländereck',
         'url': 'https://map.freifunk-3laendereck.net/ff3l/'
       },
@@ -118,6 +124,18 @@ module.exports = function () {
         'url': 'https://map.freifunk-3laendereck.net/ff3l-wtk/'
       },
       {
+        'site': 'ff3l-hoho',
+        'domain': 'ff3l-hoho',
+        'name': 'Hochrhein-Hotzenwald',
+        'url': 'https://map.freifunk-3laendereck.net/ff3l-hoho/'
+      },
+      {
+        'site': 'ff3l-wtk',
+        'domain': 'ff3l-wtk',
+        'name': 'Waldshut-Tiengen-Klettgau',
+        'url': 'https://map.freifunk-3laendereck.net/ff3l-wtk/'
+      },
+      {
         'site': 'ff3l-wald',
         'domain': 'wald',
         'name': 'Südschwarzwald',
@@ -126,6 +144,12 @@ module.exports = function () {
       {
         'site': 'ff3l-wiese',
         'domain': 'wiese',
+        'name': 'Wiesental',
+        'url': 'https://map.freifunk-3laendereck.net/ff3l-wiese/'
+      },
+      {
+        'site': 'ff3l-wiese',
+        'domain': 'ff3l-wiese',
         'name': 'Wiesental',
         'url': 'https://map.freifunk-3laendereck.net/ff3l-wiese/'
       },
@@ -170,6 +194,23 @@ module.exports = function () {
         'domain': 'ffng',
         'name': 'Nordschwarzwald-Gäu',
         'url': 'https://map.freifunk-3laendereck.net/ffng/'
+      },
+      {
+        'site': 'ff3l-ng',
+        'domain': 'ff3l-ng',
+        'name': 'Nordschwarzwald-Gäu',
+        'url': 'https://map.freifunk-3laendereck.net/ffng/'
+      },
+      {
+        'domain': 'ff3l-wald',
+        'name': 'Südschwarzwald',
+        'url': 'https://map.freifunk-3laendereck.net/ff3l-wald/'
+      },
+      {
+        'site': 'ff3l-3land',
+        'domain':'ff3l-3land',
+        'name': 'Dreiland',
+        'url': 'https://map.freifunk-3laendereck.net/ff3l-3land/'
       },
       {
         'site': 'fftut',
