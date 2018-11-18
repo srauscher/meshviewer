@@ -4,30 +4,30 @@ module.exports = function () {
     'nodeInfos': [
       {
         'name': 'Clientstatistik',
-        'href': 'https://map.freifunk-3laendereck.net/grafana/dashboard/db/freifunk-dreilandereck-einzelansicht?var-Knotenid={NODE_ID}&theme=light',
-        'image': 'https://map.freifunk-3laendereck.net/grafana/render/d-solo/000000006/freifunk-dreilandereck-einzelansicht?refresh=5m&orgId=1&panelId=3&var-Knotenid={NODE_ID}&width=528&height=290&theme=light',
+        'href': 'https://map.freifunk-3laendereck.net/grafana/d/000000002/freifunk-tuttlingen-einzelansicht?var-Knotenid={NODE_ID}&theme=light',
+        'image': 'https://map.freifunk-3laendereck.net/grafana/render/d-solo/000000002/freifunk-tuttlingen-einzelansicht?refresh=5m&orgId=1&panelId=3&var-Knotenid={NODE_ID}&width=528&height=290&theme=light',
         'title': 'Clientstatistik für {NODE_ID} - weiteren Statistiken'
       }
     ],
     'globalInfos': [
       {
         'name': 'Tagesstatistik',
-        'href': 'https://map.freifunk-3laendereck.net/grafana/dashboard/db/freifunk-dreilandereck-history?theme=light',
-        'image': 'https://map.freifunk-3laendereck.net/grafana/render/d-solo/000000008/freifunk-dreilandereck-history?refresh=5m&orgId=1&panelId=1&width=528&height=290&theme=light',
+        'href': 'https://map.freifunk-3laendereck.net/grafana/d/000000004/freifunk-tuttlingen-history?theme=light',
+        'image': 'https://map.freifunk-3laendereck.net/grafana/render/d-solo/000000004/freifunk-tuttlingen-history?refresh=5m&orgId=1&panelId=1&width=528&height=290&theme=light',
         'title': 'Bild mit Tagesstatistik'
       },
       {
         'name': 'Wochenstatistik',
-        'href': 'https://map.freifunk-3laendereck.net/grafana/dashboard/db/freifunk-dreilandereck-history?theme=light',
-        'image': 'https://map.freifunk-3laendereck.net/grafana/render/d-solo/000000008/freifunk-dreilandereck-history?refresh=5m&orgId=1&panelId=2&width=528&height=290&theme=light',
+        'href': 'https://map.freifunk-3laendereck.net/grafana/d/000000004/freifunk-tuttlingen-history?theme=light',
+        'image': 'https://map.freifunk-3laendereck.net/grafana/render/d-solo/000000004/freifunk-tuttlingen-history?refresh=5m&orgId=1&panelId=2&width=528&height=290&theme=light',
         'title': 'Bild mit Wochenstatistik'
       }
     ],
     // Array of data provider are supported
     'dataPath': [
-      'https://map.freifunk-3laendereck.net/data/'
+      'https://map.freifunk-3laendereck.net/map-data/fftut/'
     ],
-    'siteName': 'Freifunk Dreiländereck',
+    'siteName': 'Freifunk Tuttlingen',
     'mapLayers': [
       {
         'name': 'Carto light',
@@ -75,15 +75,15 @@ module.exports = function () {
     ],
     // Set a visible frame
     'fixedCenter': [
-      // Northwest 
+      // Northwest
       [
-        48.5838,
-        7.5613
+        48.0443,
+        8.7389
       ],
       // Southeast
       [
-        47.3220,
-        8.5034
+        47.9381,
+        8.9517
       ]
     ],
     'allCommunities': {
@@ -201,6 +201,28 @@ module.exports = function () {
         'title': 'Knotenliste',
         'href': 'https://www.knotenliste.de/index.html',
         'target': '_blank'
+      }
+    ],
+    geo: [
+      {
+        json: function () {
+          return require('helper').getJSON('https://map.freifunk-3laendereck.net/geojson/fftut.geojson').then(function (result) {
+            return result.features ? result.features : false;
+          }, function () {
+            return false;
+          });
+        },
+        option: {
+          style: {
+            color: '#6de922',
+            weight: 5,
+            opacity: 0.4,
+            fill: false,
+//            fillColor: '#6de922',
+//            fillOpacity: 0.05,
+            interactive: false
+          }
+        }
       }
     ]
   };
