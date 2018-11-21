@@ -45,7 +45,7 @@
   },
   "sidebar": {
     "nodeFilter": "Knotenfilter",
-    "nodes": "%{total} Knoten, davon %{online} Knoten online",
+    "nodes": "%{total} Knoten, davon %{online} Knoten online (%{percent_online} %)",
     "clients": "mit %{smart_count} Nutzer |||| mit %{smart_count} Nutzern",
     "gateway": "auf %{smart_count} Gateway |||| auf %{smart_count} Gateways",
     "lastUpdate": "Letzte Aktualisierung",

@@ -45,7 +45,7 @@
   },
   "sidebar": {
     "nodeFilter": "Düğüm Filtresi",
-    "nodes": "%{total} düğümler, %{online} çevrimiçi düğümler dahil",
+    "nodes": "%{total} düğümler, %{online} çevrimiçi düğümler dahil (%{percent_online} %)",
     "clients": "%{smart_count} müşteri ile |||| %{smart_count} müşteriler ile",
     "gateway": "%{smart_count} geçit üzerinde |||| %{smart_count} geçitler üzerinde",
     "lastUpdate": "Son güncelleme",

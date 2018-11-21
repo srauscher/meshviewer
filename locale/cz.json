@@ -45,7 +45,7 @@
   },
   "sidebar": {
     "nodeFilter": "nodeFilter",
-    "nodes": "%{total} uzly, %{online} uzly on-line",
+    "nodes": "%{total} uzly, %{online} uzly on-line (%{percent_online} %)",
     "clients": "%{smart_count} klienti |||| %{smart_count} klienti",
     "gateway": " %{smart_count} gateway |||| %{smart_count} gateways",
     "lastUpdate": "Poslední update",
