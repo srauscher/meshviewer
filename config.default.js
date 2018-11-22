@@ -53,8 +53,16 @@ module.exports = function () {
         'value': 'mac'
       },
       {
+        'name': 'node.id',
+        'value': 'node_id'
+      },
+      {
         'name': 'node.firmware',
         'value': 'Firmware'
+      },
+      {
+        'name': 'node.domain',
+        'value': 'Domain'
       },
       {
         'name': 'node.uptime',
@@ -87,10 +95,6 @@ module.exports = function () {
       {
         'name': 'node.update',
         'value': 'Autoupdate'
-      },
-      {
-        'name': 'node.domain',
-        'value': 'Domain'
       },
       {
         'name': 'node.clients',
