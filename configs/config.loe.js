@@ -4,34 +4,34 @@ module.exports = function () {
     'nodeInfos': [
       {
         'name': 'Clientstatistik',
-        'href': 'https://map.freifunk-3laendereck.net/grafana/d/000000014/freifunk-diaspora-einzelansicht?var-Knotenid={NODE_ID}&theme=light',
-        'image': 'https://map.freifunk-3laendereck.net/grafana/render/d-solo/000000014/freifunk-diaspora-einzelansicht?refresh=5m&orgId=1&panelId=3&var-Knotenid={NODE_ID}&width=528&height=290&theme=light',
+        'href': 'https://map.freifunk-3laendereck.net/grafana/d/000000030/freifunk-lorrach-oberrhein-einzelansicht?var-Knotenid={NODE_ID}&theme=light',
+        'image': 'https://map.freifunk-3laendereck.net/grafana/render/d-solo/000000030/freifunk-lorrach-oberrhein-einzelansicht?refresh=5m&orgId=1&panelId=3&var-Knotenid={NODE_ID}&width=528&height=290&theme=light',
         'title': 'Clientstatistik für {NODE_ID} - weiteren Statistiken'
       }
     ],
     'globalInfos': [
       {
         'name': 'Tagesstatistik',
-        'href': 'https://map.freifunk-3laendereck.net/grafana/d/000000016/freifunk-diaspora-history?theme=light',
-        'image': 'https://map.freifunk-3laendereck.net/grafana/render/d-solo/000000016/freifunk-diaspora-history?refresh=5m&orgId=1&panelId=1&width=528&height=290&theme=light',
+        'href': 'https://map.freifunk-3laendereck.net/grafana/d/000000031/freifunk-lorrach-oberrhein-history?theme=light',
+        'image': 'https://map.freifunk-3laendereck.net/grafana/render/d-solo/000000031/freifunk-lorrach-oberrhein-history?refresh=5m&orgId=1&panelId=1&width=528&height=290&theme=light',
         'title': 'Bild mit Tagesstatistik'
       },
       {
         'name': 'Wochenstatistik',
-        'href': 'https://map.freifunk-3laendereck.net/grafana/d/000000016/freifunk-diaspora-history?theme=light',
-        'image': 'https://map.freifunk-3laendereck.net/grafana/render/d-solo/000000016/freifunk-diaspora-history?refresh=5m&orgId=1&panelId=2&width=528&height=290&theme=light',
+        'href': 'https://map.freifunk-3laendereck.net/grafana/d/000000031/freifunk-lorrach-oberrhein-history?theme=light',
+        'image': 'https://map.freifunk-3laendereck.net/grafana/render/d-solo/000000031/freifunk-lorrach-oberrhein-history?refresh=5m&orgId=1&panelId=2&width=528&height=290&theme=light',
         'title': 'Bild mit Wochenstatistik'
       }
     ],
     // Array of data provider are supported
     'dataPath': [
-      'https://map.freifunk-3laendereck.net/map-data/ff3l/'
+      'https://develop.freifunkkarte.de/map-data/loe/'
     ],
-    'siteName': 'Freifunk Dreiländereck ("Diaspora")',
+    'siteName': 'Freifunk Lörrach-Oberrhein',
     'mapLayers': [
       {
         'name': 'Carto light',
-        'url': 'https://map.freifunk-3laendereck.net/cartolite/{z}/{x}/{y}.png',
+        'url': 'https://develop.freifunkkarte.de/cartolite/{z}/{x}/{y}.png',
         'config': {
           'type': 'osm',
           'attribution': '&copy; OpenStreetMap contributors, &copy; CartoDB',
@@ -40,7 +40,7 @@ module.exports = function () {
       },
       {
         'name': 'Carto dark',
-        'url': 'https://map.freifunk-3laendereck.net/cartodark/{z}/{x}/{y}.png',
+        'url': 'https://develop.freifunkkarte.de/cartodark/{z}/{x}/{y}.png',
         'config': {
           'type': 'osm',
           'attribution': '&copy; OpenStreetMap contributors, &copy; CartoDB',
@@ -49,7 +49,7 @@ module.exports = function () {
       },
       {
         'name': 'Openstreetmap',
-        'url': 'https://map.freifunk-3laendereck.net/tiles/{z}/{x}/{y}.png',
+        'url': 'https://develop.freifunkkarte.de/tiles/{z}/{x}/{y}.png',
         'config': {
           'type': 'osm',
           'attribution': 'Tiles CC-BY-SA OpenStreetMap',
@@ -66,7 +66,7 @@ module.exports = function () {
       },
       {
         'name': 'OpenTopoMap',
-        'url': 'https://map.freifunk-3laendereck.net/opentopo/{z}/{x}/{y}.png',
+        'url': 'https://develop.freifunkkarte.de/opentopo/{z}/{x}/{y}.png',
         'config': {
           'attribution': 'Kartendaten: © OpenStreetMap-Mitwirkende, SRTM | Kartendarstellung: © OpenTopoMap (CC-BY-SA)',
           'maxZoom': 17
@@ -77,13 +77,13 @@ module.exports = function () {
     'fixedCenter': [
       // Northwest
       [
-        47.5663,
-        8.2644
+        47.6390,
+        7.5719
       ],
       // Southeast
       [
-        47.2484,
-        8.7506
+        47.5966,
+        7.7148
       ]
     ],
     'allCommunities': {
@@ -238,6 +238,28 @@ module.exports = function () {
         'title': 'Knotenliste',
         'href': 'https://www.knotenliste.de/index.html',
         'target': '_blank'
+      }
+    ],
+    geo: [
+      {
+        json: function () {
+          return require('helper').getJSON('https://map.freifunk-3laendereck.net/geojson/loe.geojson').then(function (result) {
+            return result.features ? result.features : false;
+          }, function () {
+            return false;
+          });
+        },
+        option: {
+          style: {
+            color: '#ff7800',
+            weight: 5,
+            opacity: 0.4,
+            fill: false,
+//            fillColor: '#e23535',
+//            fillOpacity: 0.05,
+            interactive: false
+          }
+        }
       }
     ]
   };

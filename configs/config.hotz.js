@@ -4,30 +4,30 @@ module.exports = function () {
     'nodeInfos': [
       {
         'name': 'Clientstatistik',
-        'href': 'https://map.freifunk-3laendereck.net/grafana/d/000000010/freifunk-hochrhein-hotzenwald-einzelansicht?var-Knotenid={NODE_ID}&theme=light',
-        'image': 'https://map.freifunk-3laendereck.net/grafana/render/d-solo/000000010/freifunk-hochrhein-hotzenwald-einzelansicht?refresh=5m&orgId=1&panelId=3&var-Knotenid={NODE_ID}&width=528&height=290&theme=light',
+        'href': 'https://map.freifunk-3laendereck.net/grafana/d/000000082/freifunk-hotzenwald-einzelansicht?var-Knotenid={NODE_ID}&theme=light',
+        'image': 'https://map.freifunk-3laendereck.net/grafana/render/d-solo/000000082/freifunk-hotzenwald-einzelansicht?refresh=5m&orgId=1&panelId=3&var-Knotenid={NODE_ID}&width=528&height=290&theme=light',
         'title': 'Clientstatistik für {NODE_ID} - weiteren Statistiken'
       }
     ],
     'globalInfos': [
       {
         'name': 'Tagesstatistik',
-        'href': 'https://map.freifunk-3laendereck.net/grafana/d/000000012/freifunk-hochrhein-hotzenwald-history?theme=light',
-        'image': 'https://map.freifunk-3laendereck.net/grafana/render/d-solo/000000012/freifunk-hochrhein-hotzenwald-history?refresh=5m&orgId=1&panelId=1&width=528&height=290&theme=light',
+        'href': 'https://map.freifunk-3laendereck.net/grafana/d/000000081/freifunk-hotzenwald-history?theme=light',
+        'image': 'https://map.freifunk-3laendereck.net/grafana/render/d-solo/000000081/freifunk-hotzenwald-history?refresh=5m&orgId=1&panelId=1&width=528&height=290&theme=light',
         'title': 'Bild mit Tagesstatistik'
       },
       {
         'name': 'Wochenstatistik',
-        'href': 'https://map.freifunk-3laendereck.net/grafana/d/000000012/freifunk-hochrhein-hotzenwald-history?theme=light',
-        'image': 'https://map.freifunk-3laendereck.net/grafana/render/d-solo/000000012/freifunk-hochrhein-hotzenwald-history?refresh=5m&orgId=1&panelId=2&width=528&height=290&theme=light',
+        'href': 'https://map.freifunk-3laendereck.net/grafana/d/000000081/freifunk-hotzenwald-history?theme=light',
+        'image': 'https://map.freifunk-3laendereck.net/grafana/render/d-solo/000000081/freifunk-hotzenwald-history?refresh=5m&orgId=1&panelId=2&width=528&height=290&theme=light',
         'title': 'Bild mit Wochenstatistik'
       }
     ],
     // Array of data provider are supported
     'dataPath': [
-      'https://map.freifunk-3laendereck.net/map-data/hoho/'
+      'https://map.freifunk-3laendereck.net/map-data/hotz/'
     ],
-    'siteName': 'Freifunk Dreiländereck',
+    'siteName': 'Freifunk Hotzenwald',
     'mapLayers': [
       {
         'name': 'Carto light',
@@ -77,13 +77,13 @@ module.exports = function () {
     'fixedCenter': [
       // Northwest
       [
-        47.8795,
-        7.5407
+        47.6772,
+        7.9930
       ],
       // Southeast
       [
-        47.5042,
-        7.9994
+        47.6334,
+        8.0890
       ]
     ],
     'allCommunities': {
@@ -102,8 +102,7 @@ module.exports = function () {
       },
       {
         'domain': 'hoho',
-        'name': 'Hochrhein-Hotzenwald',
-        'url': '/ff3l-hoho/'
+        'name': 'Hochrhein-Hotzenwald'
       },
       {
         'domain': 'wtk',
@@ -120,8 +119,7 @@ module.exports = function () {
       },
       {
         'domain': 'wald',
-        'name': 'Südschwarzwald',
-        'url': '/ff3l-wald/'
+        'name': 'Südschwarzwald'
       },
       {
         'domain': 'wiese',
@@ -149,8 +147,7 @@ module.exports = function () {
       },
       {
         'domain': 'test',
-        'name': 'Testnetz',
-        'url': '/ff3l-test/'
+        'name': 'Testnetz'
       },
       {
         'domain': 'nalb',
@@ -184,6 +181,46 @@ module.exports = function () {
         'domain': 'fftut',
         'name': 'Tuttlingen',
         'url': '/fftut/'
+      },
+      {
+		    'domain': 'fffr',
+    	  'name': 'Freiburg',
+    	  'url': '/fffr/'
+      },
+      {
+        'domain': 'ffem',
+        'name': 'Emmendingen',
+        'url': '/ffem/'
+      },
+      {
+        'domain': 'bh',
+        'name': 'Breisgau-Hochschwarzwald',
+        'url': '/bh/'
+      },
+      {
+        'domain': 'hotz',
+        'name': 'Hotzenwald',
+        'url': '/hotz/'
+      },
+      {
+        'domain': 'rhf',
+        'name': 'Rheinfelden',
+        'url': '/rhf/'
+      },
+      {
+        'domain': 'saek',
+        'name': 'Säckingen',
+        'url': '/saek/'
+      },
+      {
+        'domain': 'ssww',
+        'name': 'Südschwarzwald-West',
+        'url': '/ssww/'
+      },
+      {
+        'domain': 'sswo',
+        'name': 'Südschwarzwald-Ost',
+        'url': '/sswo/'
       }
     ],
     'linkList': [
@@ -206,7 +243,7 @@ module.exports = function () {
     geo: [
       {
         json: function () {
-          return require('helper').getJSON('https://map.freifunk-3laendereck.net/geojson/3land.geojson').then(function (result) {
+          return require('helper').getJSON('https://map.freifunk-3laendereck.net/geojson/hotz.geojson').then(function (result) {
             return result.features ? result.features : false;
           }, function () {
             return false;
@@ -214,7 +251,7 @@ module.exports = function () {
         },
         option: {
           style: {
-            color: '#6de922',
+            color: '#ff7800',
             weight: 5,
             opacity: 0.4,
             fill: false,

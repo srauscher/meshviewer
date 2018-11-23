@@ -4,30 +4,30 @@ module.exports = function () {
     'nodeInfos': [
       {
         'name': 'Clientstatistik',
-        'href': 'https://map.freifunk-3laendereck.net/grafana/d/000000014/freifunk-diaspora-einzelansicht?var-Knotenid={NODE_ID}&theme=light',
-        'image': 'https://map.freifunk-3laendereck.net/grafana/render/d-solo/000000014/freifunk-diaspora-einzelansicht?refresh=5m&orgId=1&panelId=3&var-Knotenid={NODE_ID}&width=528&height=290&theme=light',
+        'href': 'https://map.freifunk-3laendereck.net/grafana/d/000000054/freifunk-schwarzwald-baar-einzelansicht?var-Knotenid={NODE_ID}&theme=light',
+        'image': 'https://map.freifunk-3laendereck.net/grafana/render/d-solo/000000054/freifunk-schwarzwald-baar-einzelansicht?refresh=5m&orgId=1&panelId=3&var-Knotenid={NODE_ID}&width=528&height=290&theme=light',
         'title': 'Clientstatistik für {NODE_ID} - weiteren Statistiken'
       }
     ],
     'globalInfos': [
       {
         'name': 'Tagesstatistik',
-        'href': 'https://map.freifunk-3laendereck.net/grafana/d/000000016/freifunk-diaspora-history?theme=light',
-        'image': 'https://map.freifunk-3laendereck.net/grafana/render/d-solo/000000016/freifunk-diaspora-history?refresh=5m&orgId=1&panelId=1&width=528&height=290&theme=light',
+        'href': 'https://map.freifunk-3laendereck.net/grafana/d/000000052/freifunk-schwarzwald-baar-history?theme=light',
+        'image': 'https://map.freifunk-3laendereck.net/grafana/render/d-solo/000000052/freifunk-schwarzwald-baar-history?refresh=5m&orgId=1&panelId=1&width=528&height=290&theme=light',
         'title': 'Bild mit Tagesstatistik'
       },
       {
         'name': 'Wochenstatistik',
-        'href': 'https://map.freifunk-3laendereck.net/grafana/d/000000016/freifunk-diaspora-history?theme=light',
-        'image': 'https://map.freifunk-3laendereck.net/grafana/render/d-solo/000000016/freifunk-diaspora-history?refresh=5m&orgId=1&panelId=2&width=528&height=290&theme=light',
+        'href': 'https://map.freifunk-3laendereck.net/grafana/d/000000052/freifunk-schwarzwald-baar-history?theme=light',
+        'image': 'https://map.freifunk-3laendereck.net/grafana/render/d-solo/000000052/freifunk-schwarzwald-baar-history?refresh=5m&orgId=1&panelId=2&width=528&height=290&theme=light',
         'title': 'Bild mit Wochenstatistik'
       }
     ],
     // Array of data provider are supported
     'dataPath': [
-      'https://map.freifunk-3laendereck.net/map-data/ff3l/'
+      'https://map.freifunk-3laendereck.net/map-data/swb/'
     ],
-    'siteName': 'Freifunk Dreiländereck ("Diaspora")',
+    'siteName': 'Freifunk Schwarzwald-Baar',
     'mapLayers': [
       {
         'name': 'Carto light',
@@ -77,13 +77,13 @@ module.exports = function () {
     'fixedCenter': [
       // Northwest
       [
-        47.5663,
-        8.2644
+        48.1358,
+        8.3029
       ],
       // Southeast
       [
-        47.2484,
-        8.7506
+        48.1005,
+        8.4090
       ]
     ],
     'allCommunities': {
@@ -238,6 +238,28 @@ module.exports = function () {
         'title': 'Knotenliste',
         'href': 'https://www.knotenliste.de/index.html',
         'target': '_blank'
+      }
+    ],
+    geo: [
+      {
+        json: function () {
+          return require('helper').getJSON('https://map.freifunk-3laendereck.net/geojson/swb.geojson').then(function (result) {
+            return result.features ? result.features : false;
+          }, function () {
+            return false;
+          });
+        },
+        option: {
+          style: {
+            color: '#ff7800',
+            weight: 5,
+            opacity: 0.4,
+            fill: false,
+//            fillColor: '#6de922',
+//            fillOpacity: 0.05,
+            interactive: false
+          }
+        }
       }
     ]
   };

@@ -4,7 +4,7 @@ module.exports = function () {
     'nodeInfos': [
       {
         'name': 'Clientstatistik',
-        'href': 'https://map.freifunk-3laendereck.net/grafana/dashboard/db/freifunk-dreilandereck-einzelansicht?var-Knotenid={NODE_ID}&theme=light',
+        'href': 'https://map.freifunk-3laendereck.net/grafana/d/000000008/freifunk-dreilandereck-einzelansicht?var-Knotenid={NODE_ID}&theme=light',
         'image': 'https://map.freifunk-3laendereck.net/grafana/render/d-solo/000000006/freifunk-dreilandereck-einzelansicht?refresh=5m&orgId=1&panelId=3&var-Knotenid={NODE_ID}&width=528&height=290&theme=light',
         'title': 'Clientstatistik für {NODE_ID} - weiteren Statistiken'
       }
@@ -12,13 +12,13 @@ module.exports = function () {
     'globalInfos': [
       {
         'name': 'Tagesstatistik',
-        'href': 'https://map.freifunk-3laendereck.net/grafana/dashboard/db/freifunk-dreilandereck-history?theme=light',
+        'href': 'https://map.freifunk-3laendereck.net/grafana/d/000000008/freifunk-dreilandereck-history?theme=light',
         'image': 'https://map.freifunk-3laendereck.net/grafana/render/d-solo/000000008/freifunk-dreilandereck-history?refresh=5m&orgId=1&panelId=1&width=528&height=290&theme=light',
         'title': 'Bild mit Tagesstatistik'
       },
       {
         'name': 'Wochenstatistik',
-        'href': 'https://map.freifunk-3laendereck.net/grafana/dashboard/db/freifunk-dreilandereck-history?theme=light',
+        'href': 'https://map.freifunk-3laendereck.net/grafana/d/000000008/freifunk-dreilandereck-history?theme=light',
         'image': 'https://map.freifunk-3laendereck.net/grafana/render/d-solo/000000008/freifunk-dreilandereck-history?refresh=5m&orgId=1&panelId=2&width=528&height=290&theme=light',
         'title': 'Bild mit Wochenstatistik'
       }
@@ -102,8 +102,7 @@ module.exports = function () {
       },
       {
         'domain': 'hoho',
-        'name': 'Hochrhein-Hotzenwald',
-        'url': '/ff3l-hoho/'
+        'name': 'Hochrhein-Hotzenwald'
       },
       {
         'domain': 'wtk',
@@ -120,8 +119,7 @@ module.exports = function () {
       },
       {
         'domain': 'wald',
-        'name': 'Südschwarzwald',
-        'url': '/ff3l-wald/'
+        'name': 'Südschwarzwald'
       },
       {
         'domain': 'wiese',
@@ -149,8 +147,7 @@ module.exports = function () {
       },
       {
         'domain': 'test',
-        'name': 'Testnetz',
-        'url': '/ff3l-test/'
+        'name': 'Testnetz'
       },
       {
         'domain': 'nalb',
@@ -184,6 +181,46 @@ module.exports = function () {
         'domain': 'fftut',
         'name': 'Tuttlingen',
         'url': '/fftut/'
+      },
+      {
+		    'domain': 'fffr',
+    	  'name': 'Freiburg',
+    	  'url': '/fffr/'
+      },
+      {
+        'domain': 'ffem',
+        'name': 'Emmendingen',
+        'url': '/ffem/'
+      },
+      {
+        'domain': 'bh',
+        'name': 'Breisgau-Hochschwarzwald',
+        'url': '/bh/'
+      },
+      {
+        'domain': 'hotz',
+        'name': 'Hotzenwald',
+        'url': '/hotz/'
+      },
+      {
+        'domain': 'rhf',
+        'name': 'Rheinfelden',
+        'url': '/rhf/'
+      },
+      {
+        'domain': 'saek',
+        'name': 'Säckingen',
+        'url': '/saek/'
+      },
+      {
+        'domain': 'ssww',
+        'name': 'Südschwarzwald-West',
+        'url': '/ssww/'
+      },
+      {
+        'domain': 'sswo',
+        'name': 'Südschwarzwald-Ost',
+        'url': '/sswo/'
       }
     ],
     'linkList': [

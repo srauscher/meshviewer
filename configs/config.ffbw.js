@@ -98,8 +98,7 @@ module.exports = function () {
       },
       {
         'domain': 'hoho',
-        'name': 'Hochrhein-Hotzenwald',
-        'url': '/ff3l-hoho/'
+        'name': 'Hochrhein-Hotzenwald'
       },
       {
         'domain': 'wtk',
@@ -116,8 +115,7 @@ module.exports = function () {
       },
       {
         'domain': 'wald',
-        'name': 'Südschwarzwald',
-        'url': '/ff3l-wald/'
+        'name': 'Südschwarzwald'
       },
       {
         'domain': 'wiese',
@@ -145,8 +143,7 @@ module.exports = function () {
       },
       {
         'domain': 'test',
-        'name': 'Testnetz',
-        'url': '/ff3l-test/'
+        'name': 'Testnetz'
       },
       {
         'domain': 'nalb',
@@ -180,6 +177,46 @@ module.exports = function () {
         'domain': 'fftut',
         'name': 'Tuttlingen',
         'url': '/fftut/'
+      },
+      {
+		    'domain': 'fffr',
+    	  'name': 'Freiburg',
+    	  'url': '/fffr/'
+      },
+      {
+        'domain': 'ffem',
+        'name': 'Emmendingen',
+        'url': '/ffem/'
+      },
+      {
+        'domain': 'bh',
+        'name': 'Breisgau-Hochschwarzwald',
+        'url': '/bh/'
+      },
+      {
+        'domain': 'hotz',
+        'name': 'Hotzenwald',
+        'url': '/hotz/'
+      },
+      {
+        'domain': 'rhf',
+        'name': 'Rheinfelden',
+        'url': '/rhf/'
+      },
+      {
+        'domain': 'saek',
+        'name': 'Säckingen',
+        'url': '/saek/'
+      },
+      {
+        'domain': 'ssww',
+        'name': 'Südschwarzwald-West',
+        'url': '/ssww/'
+      },
+      {
+        'domain': 'sswo',
+        'name': 'Südschwarzwald-Ost',
+        'url': '/sswo/'
       }
     ],
     'linkList': [
