@@ -88,48 +88,9 @@ module.exports = function () {
     },
     'domainNames': [
       {
-        'domain': 'default',
-        'name': 'Freifunk Dreiländereck',
-        'url': '/ff3l/'
-      },
-      {
-        'domain': 'ff3l',
-        'name': 'Freifunk Dreiländereck'
-      },
-      {
-        'domain': 'hoho',
-        'name': 'Hochrhein-Hotzenwald'
-      },
-      {
-        'domain': 'wtk',
-        'name': 'Waldshut-Tiengen-Klettgau',
-        'url': '/ff3l-wtk/'
-      },
-      {
-        'domain': 'ff3l-hoho',
-        'name': 'Hochrhein-Hotzenwald'
-      },
-      {
-        'domain': 'ff3l-wtk',
-        'name': 'Waldshut-Tiengen-Klettgau'
-      },
-      {
-        'domain': 'wald',
-        'name': 'Südschwarzwald'
-      },
-      {
-        'domain': 'wiese',
-        'name': 'Wiesental',
-        'url': '/ff3l-wiese/'
-      },
-      {
-        'domain': 'ff3l-wiese',
-        'name': 'Wiesental'
-      },
-      {
-        'domain':'loe',
-        'name': 'Lörrach-Oberrhein',
-        'url': '/ff3l-loe/'
+        'domain': 'bh',
+        'name': 'Breisgau-Hochschwarzwald',
+        'url': '/bh/'
       },
       {
         'domain':'3land',
@@ -137,23 +98,50 @@ module.exports = function () {
         'url': '/ff3l-3land/'
       },
       {
-        'domain': 'ref',
-        'name': 'Refugees',
-        'url': '/ff3l-ref/'
+        'domain':'ff3l-3land',
+        'name': 'Dreiland'
       },
       {
-        'domain': 'test',
-        'name': 'Testnetz'
+        'domain': 'ffem',
+        'name': 'Emmendingen',
+        'url': '/ffem/'
+      },
+      {
+        'domain': 'fffr',
+   	    'name': 'Freiburg',
+   	    'url': '/fffr/'
+      },
+      {
+        'domain': 'default',
+        'name': 'Freifunk Dreiländereck (Diaspora)',
+        'url': '/ff3l/'
+      },
+      {
+        'domain': 'ff3l',
+        'name': 'Freifunk Dreiländereck (Diaspora)'
+      },
+      {
+        'domain': 'hoho',
+        'name': 'Hochrhein-Hotzenwald'
+      },
+      {
+        'domain': 'ff3l-hoho',
+        'name': 'Hochrhein-Hotzenwald'
+      },
+      {
+        'domain': 'hotz',
+        'name': 'Hotzenwald',
+        'url': '/hotz/'
+      },
+      {
+        'domain':'loe',
+        'name': 'Lörrach-Oberrhein',
+        'url': '/ff3l-loe/'
       },
       {
         'domain': 'nalb',
         'name': 'Neckar-Alb',
         'url': '/ff3l-nalb/'
-      },
-      {
-        'domain': 'swb',
-        'name': 'Schwarzwald-Baar',
-        'url': '/ff3l-swb/'
       },
       {
         'domain': 'ffng',
@@ -166,37 +154,9 @@ module.exports = function () {
         'name': 'Nordschwarzwald-Gäu'
       },
       {
-        'domain': 'ff3l-wald',
-        'name': 'Südschwarzwald'
-      },
-      {
-        'domain':'ff3l-3land',
-        'name': 'Dreiland'
-      },
-      {
-        'domain': 'fftut',
-        'name': 'Tuttlingen',
-        'url': '/fftut/'
-      },
-      {
-		    'domain': 'fffr',
-    	  'name': 'Freiburg',
-    	  'url': '/fffr/'
-      },
-      {
-        'domain': 'ffem',
-        'name': 'Emmendingen',
-        'url': '/ffem/'
-      },
-      {
-        'domain': 'bh',
-        'name': 'Breisgau-Hochschwarzwald',
-        'url': '/bh/'
-      },
-      {
-        'domain': 'hotz',
-        'name': 'Hotzenwald',
-        'url': '/hotz/'
+        'domain': 'ref',
+        'name': 'Refugees',
+        'url': '/ff3l-ref/'
       },
       {
         'domain': 'rhf',
@@ -209,14 +169,54 @@ module.exports = function () {
         'url': '/saek/'
       },
       {
+        'domain': 'swb',
+        'name': 'Schwarzwald-Baar',
+        'url': '/ff3l-swb/'
+      },
+      {
+        'domain': 'wald',
+        'name': 'Südschwarzwald'
+      },
+	    {
+        'domain': 'ff3l-wald',
+        'name': 'Südschwarzwald'
+      },
+	    {
+        'domain': 'sswo',
+        'name': 'Südschwarzwald-Ost',
+        'url': '/sswo/'
+      },
+      {
         'domain': 'ssww',
         'name': 'Südschwarzwald-West',
         'url': '/ssww/'
       },
       {
-        'domain': 'sswo',
-        'name': 'Südschwarzwald-Ost',
-        'url': '/sswo/'
+        'domain': 'test',
+        'name': 'Testnetz'
+      },
+   	  {
+        'domain': 'fftut',
+        'name': 'Tuttlingen',
+        'url': '/fftut/'
+      },
+	        {
+        'domain': 'wtk',
+        'name': 'Waldshut-Tiengen-Klettgau',
+        'url': '/ff3l-wtk/'
+      },
+      {
+        'domain': 'ff3l-wtk',
+        'name': 'Waldshut-Tiengen-Klettgau'
+      },
+      {
+        'domain': 'wiese',
+        'name': 'Wiesental',
+        'url': '/ff3l-wiese/'
+      },
+      {
+        'domain': 'ff3l-wiese',
+        'name': 'Wiesental'
       }
     ],
     'linkList': [

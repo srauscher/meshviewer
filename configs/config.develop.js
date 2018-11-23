@@ -100,80 +100,65 @@ module.exports = function () {
     },
     'domainNames': [
       {
+        'domain': 'bh',
+        'name': 'Breisgau-Hochschwarzwald',
+        'url': '/bh/'
+      },
+      {
+        'domain':'3land',
+        'name': 'Dreiland',
+        'url': '/ff3l-3land/'
+      },
+      {
+        'domain':'ff3l-3land',
+        'name': 'Dreiland'
+      },
+      {
+        'domain': 'ffem',
+        'name': 'Emmendingen',
+        'url': '/ffem/'
+      },
+      {
+        'domain': 'fffr',
+   	    'name': 'Freiburg',
+   	    'url': '/fffr/'
+      },
+      {
         'domain': 'default',
-        'name': 'Freifunk Dreiländereck',
-        'url': 'https://map.freifunk-3laendereck.net/ff3l/'
+        'name': 'Freifunk Dreiländereck (Diaspora)',
+        'url': '/ff3l/'
       },
       {
         'domain': 'ff3l',
-        'name': 'Freifunk Dreiländereck'
+        'name': 'Freifunk Dreiländereck (Diaspora)'
       },
       {
         'domain': 'hoho',
-        'name': 'Hochrhein-Hotzenwald',
-        'url': 'https://map.freifunk-3laendereck.net/ff3l-hoho/'
-      },
-      {
-        'domain': 'wtk',
-        'name': 'Waldshut-Tiengen-Klettgau',
-        'url': 'https://map.freifunk-3laendereck.net/ff3l-wtk/'
+        'name': 'Hochrhein-Hotzenwald'
       },
       {
         'domain': 'ff3l-hoho',
         'name': 'Hochrhein-Hotzenwald'
       },
       {
-        'domain': 'ff3l-wtk',
-        'name': 'Waldshut-Tiengen-Klettgau'
-      },
-      {
-        'domain': 'wald',
-        'name': 'Südschwarzwald',
-        'url': 'https://map.freifunk-3laendereck.net/ff3l-wald/'
-      },
-      {
-        'domain': 'wiese',
-        'name': 'Wiesental',
-        'url': 'https://map.freifunk-3laendereck.net/ff3l-wiese/'
-      },
-      {
-        'domain': 'ff3l-wiese',
-        'name': 'Wiesental'
+        'domain': 'hotz',
+        'name': 'Hotzenwald',
+        'url': '/hotz/'
       },
       {
         'domain':'loe',
         'name': 'Lörrach-Oberrhein',
-        'url': 'https://map.freifunk-3laendereck.net/ff3l-loe/'
-      },
-      {
-        'domain':'3land',
-        'name': 'Dreiland',
-        'url': 'https://map.freifunk-3laendereck.net/ff3l-3land/'
-      },
-      {
-        'domain': 'ref',
-        'name': 'Refugees',
-        'url': 'https://map.freifunk-3laendereck.net/ff3l-ref/'
-      },
-      {
-        'domain': 'test',
-        'name': 'Testnetz',
-        'url': 'https://map.freifunk-3laendereck.net/ff3l-test/'
+        'url': '/ff3l-loe/'
       },
       {
         'domain': 'nalb',
         'name': 'Neckar-Alb',
-        'url': 'https://map.freifunk-3laendereck.net/ff3l-nalb/'
-      },
-      {
-        'domain': 'swb',
-        'name': 'Schwarzwald-Baar',
-        'url': 'https://map.freifunk-3laendereck.net/ff3l-swb/'
+        'url': '/ff3l-nalb/'
       },
       {
         'domain': 'ffng',
         'name': 'Nordschwarzwald-Gäu',
-        'url': 'https://map.freifunk-3laendereck.net/ffng/'
+        'url': '/ffng/'
       },
       {
         'site': 'ff3l-ng',
@@ -181,17 +166,69 @@ module.exports = function () {
         'name': 'Nordschwarzwald-Gäu'
       },
       {
+        'domain': 'ref',
+        'name': 'Refugees',
+        'url': '/ff3l-ref/'
+      },
+      {
+        'domain': 'rhf',
+        'name': 'Rheinfelden',
+        'url': '/rhf/'
+      },
+      {
+        'domain': 'saek',
+        'name': 'Säckingen',
+        'url': '/saek/'
+      },
+      {
+        'domain': 'swb',
+        'name': 'Schwarzwald-Baar',
+        'url': '/ff3l-swb/'
+      },
+      {
+        'domain': 'wald',
+        'name': 'Südschwarzwald'
+      },
+	    {
         'domain': 'ff3l-wald',
         'name': 'Südschwarzwald'
       },
-      {
-        'domain':'ff3l-3land',
-        'name': 'Dreiland'
+	    {
+        'domain': 'sswo',
+        'name': 'Südschwarzwald-Ost',
+        'url': '/sswo/'
       },
       {
+        'domain': 'ssww',
+        'name': 'Südschwarzwald-West',
+        'url': '/ssww/'
+      },
+      {
+        'domain': 'test',
+        'name': 'Testnetz'
+      },
+   	  {
         'domain': 'fftut',
         'name': 'Tuttlingen',
-        'url': 'https://map.freifunk-3laendereck.net/fftut/'
+        'url': '/fftut/'
+      },
+	        {
+        'domain': 'wtk',
+        'name': 'Waldshut-Tiengen-Klettgau',
+        'url': '/ff3l-wtk/'
+      },
+      {
+        'domain': 'ff3l-wtk',
+        'name': 'Waldshut-Tiengen-Klettgau'
+      },
+      {
+        'domain': 'wiese',
+        'name': 'Wiesental',
+        'url': '/ff3l-wiese/'
+      },
+      {
+        'domain': 'ff3l-wiese',
+        'name': 'Wiesental'
       }
     ],
     'linkList': [
