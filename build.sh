@@ -56,3 +56,88 @@ yarn gulp
 if [ $? == 0 ]; then
   tar czf upload/sswo.tar.gz build
 fi
+
+# Dreiland
+cp -a configs/config.3land.js config.js
+yarn gulp
+if [ $? == 0 ]; then
+  tar czf upload/3land.tar.gz build
+fi
+
+# Diaspora
+cp -a configs/config.diaspora.js config.js
+yarn gulp
+if [ $? == 0 ]; then
+  tar czf upload/diaspora.tar.gz build
+fi
+
+# Gesamtkarte
+cp -a configs/config.ff3l.js config.js
+yarn gulp
+if [ $? == 0 ]; then
+  tar czf upload/ff3l.tar.gz build
+fi
+
+# NG
+cp -a configs/config.ff3l.js config.js
+yarn gulp
+if [ $? == 0 ]; then
+  tar czf upload/ff3l.tar.gz build
+fi
+
+# NG
+cp -a configs/config.ffng.js config.js
+yarn gulp
+if [ $? == 0 ]; then
+  tar czf upload/ffng.tar.gz build
+fi
+
+# FFTUT
+cp -a configs/config.fftut.js config.js
+yarn gulp
+if [ $? == 0 ]; then
+  tar czf upload/fftut.tar.gz build
+fi
+
+# Lörrach
+cp -a configs/config.loe.js config.js
+yarn gulp
+if [ $? == 0 ]; then
+  tar czf upload/loe.tar.gz build
+fi
+
+# Nalb
+cp -a configs/config.nalb.js config.js
+yarn gulp
+if [ $? == 0 ]; then
+  tar czf upload/nalb.tar.gz build
+fi
+
+# Ref
+cp -a configs/config.ref.js config.js
+yarn gulp
+if [ $? == 0 ]; then
+  tar czf upload/ref.tar.gz build
+fi
+
+# Wiesental
+cp -a configs/config.wiese.js config.js
+yarn gulp
+if [ $? == 0 ]; then
+  tar czf upload/wiese.tar.gz build
+fi
+
+# WTK
+cp -a configs/config.wtk.js config.js
+yarn gulp
+if [ $? == 0 ]; then
+  tar czf upload/wtk.tar.gz build
+fi
+
+# swb
+cp -a configs/config.swb.js config.js
+yarn gulp
+if [ $? == 0 ]; then
+  tar czf upload/swb.tar.gz build
+fi
+

@@ -4,30 +4,30 @@ module.exports = function () {
     'nodeInfos': [
       {
         'name': 'Clientstatistik',
-        'href': 'https://map.freifunk-3laendereck.net/grafana/d/000000014/freifunk-diaspora-einzelansicht?var-Knotenid={NODE_ID}&theme=light',
-        'image': 'https://map.freifunk-3laendereck.net/grafana/render/d-solo/000000014/freifunk-diaspora-einzelansicht?refresh=5m&orgId=1&panelId=3&var-Knotenid={NODE_ID}&width=528&height=290&theme=light',
+        'href': 'https://map.freifunk-3laendereck.net/grafana/d/000000022/freifunk-dreilandereck-refugees-einzelansicht?var-Knotenid={NODE_ID}&theme=light',
+        'image': 'https://map.freifunk-3laendereck.net/grafana/render/d-solo/000000022/freifunk-dreilandereck-refugees-einzelansicht?refresh=5m&orgId=1&panelId=3&var-Knotenid={NODE_ID}&width=528&height=290&theme=light',
         'title': 'Clientstatistik für {NODE_ID} - weiteren Statistiken'
       }
     ],
     'globalInfos': [
       {
         'name': 'Tagesstatistik',
-        'href': 'https://map.freifunk-3laendereck.net/grafana/d/000000016/freifunk-diaspora-history?theme=light',
-        'image': 'https://map.freifunk-3laendereck.net/grafana/render/d-solo/000000016/freifunk-diaspora-history?refresh=5m&orgId=1&panelId=1&width=528&height=290&theme=light',
+        'href': 'https://map.freifunk-3laendereck.net/grafana/d/000000023/freifunk-dreilandereck-refugees-history?theme=light',
+        'image': 'https://map.freifunk-3laendereck.net/grafana/render/d-solo/000000023/freifunk-dreilandereck-refugees-history?refresh=5m&orgId=1&panelId=1&width=528&height=290&theme=light',
         'title': 'Bild mit Tagesstatistik'
       },
       {
         'name': 'Wochenstatistik',
-        'href': 'https://map.freifunk-3laendereck.net/grafana/d/000000016/freifunk-diaspora-history?theme=light',
-        'image': 'https://map.freifunk-3laendereck.net/grafana/render/d-solo/000000016/freifunk-diaspora-history?refresh=5m&orgId=1&panelId=2&width=528&height=290&theme=light',
+        'href': 'https://map.freifunk-3laendereck.net/grafana/d/000000023/freifunk-dreilandereck-refugees-history?theme=light',
+        'image': 'https://map.freifunk-3laendereck.net/grafana/render/d-solo/000000023/freifunk-dreilandereck-refugees-history?refresh=5m&orgId=1&panelId=2&width=528&height=290&theme=light',
         'title': 'Bild mit Wochenstatistik'
       }
     ],
     // Array of data provider are supported
     'dataPath': [
-      'https://map.freifunk-3laendereck.net/map-data/ff3l/'
+      'https://map.freifunk-3laendereck.net/map-data/ref/'
     ],
-    'siteName': 'Freifunk Dreiländereck (Diaspora)',
+    'siteName': 'Freifunk Refugees',
     'mapLayers': [
       {
         'name': 'Carto light',
@@ -77,13 +77,13 @@ module.exports = function () {
     'fixedCenter': [
       // Northwest
       [
-        47.5663,
-        8.2644
+        47.6718,
+        7.5503
       ],
       // Southeast
       [
-        47.2484,
-        8.7506
+        47.5524,
+        7.9293
       ]
     ],
     'allCommunities': {
