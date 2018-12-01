@@ -27,7 +27,7 @@ module.exports = function () {
     'dataPath': [
       'https://map.freifunk-3laendereck.net/map-data/saek/'
     ],
-    'siteName': 'Freifunk Säckingen',
+    'siteName': 'Freifunk Bad Säckingen',
     'mapLayers': [
       {
         'name': 'Carto light',
@@ -91,6 +91,11 @@ module.exports = function () {
       'url': '/'
     },
     'domainNames': [
+      {
+        'domain': 'saek',
+        'name': 'Bad Säckingen',
+        'url': '/saek/'
+      },
       {
         'domain': 'bh',
         'name': 'Breisgau-Hochschwarzwald',
@@ -166,11 +171,6 @@ module.exports = function () {
         'domain': 'rhf',
         'name': 'Rheinfelden',
         'url': '/rhf/'
-      },
-      {
-        'domain': 'saek',
-        'name': 'Säckingen',
-        'url': '/saek/'
       },
       {
         'domain': 'swb',

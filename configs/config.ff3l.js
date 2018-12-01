@@ -92,6 +92,11 @@ module.exports = function () {
     },
     'domainNames': [
       {
+        'domain': 'saek',
+        'name': 'Bad Säckingen',
+        'url': '/saek/'
+      },
+      {
         'domain': 'bh',
         'name': 'Breisgau-Hochschwarzwald',
         'url': '/bh/'
@@ -166,11 +171,6 @@ module.exports = function () {
         'domain': 'rhf',
         'name': 'Rheinfelden',
         'url': '/rhf/'
-      },
-      {
-        'domain': 'saek',
-        'name': 'Säckingen',
-        'url': '/saek/'
       },
       {
         'domain': 'swb',
