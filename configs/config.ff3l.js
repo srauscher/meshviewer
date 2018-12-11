@@ -4,7 +4,7 @@ module.exports = function () {
     'nodeInfos': [
       {
         'name': 'Clientstatistik',
-        'href': 'https://map.freifunk-3laendereck.net/grafana/d/000000008/freifunk-dreilandereck-einzelansicht?var-Knotenid={NODE_ID}&theme=light',
+        'href': 'https://map.freifunk-3laendereck.net/grafana/d/000000006/freifunk-dreilandereck-einzelansicht?var-Knotenid={NODE_ID}&theme=light',
         'image': 'https://map.freifunk-3laendereck.net/grafana/render/d-solo/000000006/freifunk-dreilandereck-einzelansicht?refresh=5m&orgId=1&panelId=3&var-Knotenid={NODE_ID}&width=528&height=290&theme=light',
         'title': 'Clientstatistik für {NODE_ID} - weiteren Statistiken'
       }
