@@ -35,7 +35,8 @@
     "new": "Новые узлы",
     "missing": "Исчезнувшие узлы",
     "airtime2": "Airtime 2.4 GHz",
-    "airtime5": "Airtime 5 GHz"
+    "airtime5": "Airtime 5 GHz",
+    "uplink": "Uplink"
   },
   "location": {
     "location": "Расположение",

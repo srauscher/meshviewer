@@ -35,7 +35,8 @@
     "new": "New nodes",
     "missing": "Disappeared nodes",
     "airtime2": "Airtime 2.4 GHz",
-    "airtime5": "Airtime 5 GHz"
+    "airtime5": "Airtime 5 GHz",
+    "uplink": "Uplink"
   },
   "location": {
     "location": "Location",
