@@ -25,13 +25,13 @@ module.exports = function () {
     ],
     // Array of data provider are supported
     'dataPath': [
-      'https://develop.freifunkkarte.de/map-data/loe/'
+      'https://map.freifunk-3laendereck.net/map-data/loe/'
     ],
     'siteName': 'Freifunk Lörrach-Oberrhein',
     'mapLayers': [
       {
         'name': 'Carto light',
-        'url': 'https://develop.freifunkkarte.de/cartolite/{z}/{x}/{y}.png',
+        'url': 'https://map.freifunk-3laendereck.net/cartolite/{z}/{x}/{y}.png',
         'config': {
           'type': 'osm',
           'attribution': '&copy; OpenStreetMap contributors, &copy; CartoDB',
@@ -40,7 +40,7 @@ module.exports = function () {
       },
       {
         'name': 'Carto dark',
-        'url': 'https://develop.freifunkkarte.de/cartodark/{z}/{x}/{y}.png',
+        'url': 'https://map.freifunk-3laendereck.net/cartodark/{z}/{x}/{y}.png',
         'config': {
           'type': 'osm',
           'attribution': '&copy; OpenStreetMap contributors, &copy; CartoDB',
@@ -49,7 +49,7 @@ module.exports = function () {
       },
       {
         'name': 'Openstreetmap',
-        'url': 'https://develop.freifunkkarte.de/tiles/{z}/{x}/{y}.png',
+        'url': 'https://map.freifunk-3laendereck.net/tiles/{z}/{x}/{y}.png',
         'config': {
           'type': 'osm',
           'attribution': 'Tiles CC-BY-SA OpenStreetMap',
