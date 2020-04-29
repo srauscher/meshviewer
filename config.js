@@ -4,56 +4,72 @@ module.exports = function () {
     'nodeInfos': [
       {
         'name': 'Clientstatistik',
-        'href': 'https://map.freifunk-3laendereck.net/grafana/dashboard/db/freifunk-dreilandereck-einzelansicht?var-Knotenid={NODE_ID}&theme=light',
-        'image': 'https://map.freifunk-3laendereck.net/grafana/render/d-solo/000000006/freifunk-dreilandereck-einzelansicht?refresh=5m&orgId=1&panelId=3&var-Knotenid={NODE_ID}&width=528&height=290&theme=light',
+        'href': 'https://regensburg.freifunk.net/netz/statistik/node/{NODE_ID}/',
+        'image': 'https://grafana.regensburg.freifunk.net/render/d-solo/000000026/node?panelId=1&var-node={NODE_ID}&from=now-1d&width=650&height=350&theme=light&_t={TIME}',
         'title': 'Clientstatistik für {NODE_ID} - weiteren Statistiken'
+      },
+      {
+        'name': 'Trafficstatistik',
+        'href': 'https://regensburg.freifunk.net/netz/statistik/node/{NODE_ID}/',
+        'image': 'https://grafana.regensburg.freifunk.net/render/d-solo/000000026/node?panelId=2&from=now-1d&var-node={NODE_ID}&width=650&height=350&theme=light&_t={TIME}',
+        'title': 'Trafficstatistik für {NODE_ID} - weiteren Statistiken'
+      },
+      {
+        'name': 'Systemlast',
+        'href': 'https://regensburg.freifunk.net/netz/statistik/node/{NODE_ID}/',
+        'image': 'https://grafana.regensburg.freifunk.net/render/d-solo/000000026/node?panelId=4&from=now-1d&var-node={NODE_ID}&width=650&height=350&theme=light&_t={TIME}',
+        'title': 'Systemlast für {NODE_ID} - weiteren Statistiken'
+      },
+      {
+        'name': 'Airtime',
+        'href': 'https://regensburg.freifunk.net/netz/statistik/node/{NODE_ID}/',
+        'image': 'https://grafana.regensburg.freifunk.net/render/d-solo/000000026/node?panelId=5&from=now-1d&var-node={NODE_ID}&width=650&height=350&theme=light&_t={TIME}',
+        'title': 'Airtime für {NODE_ID} - weiteren Statistiken'
+      }
+    ],
+    'linkInfos': [
+      {
+        'name': 'Statistik für alle Links zwischen diese Knoten',
+        'image': 'https://grafana.regensburg.freifunk.net/render/d-solo/nvSNqoHmz/link?panelId=7&var-node={SOURCE_ID}&var-nodetolink={TARGET_ID}&from=now-1d&&width=650&height=350&theme=light&_t={TIME}',
+        'title': 'Linkstatistik des letzten Tages, min und max aller Links zwischen diesen Knoten'
       }
     ],
     'globalInfos': [
       {
-        'name': 'Tagesstatistik',
-        'href': 'https://map.freifunk-3laendereck.net/grafana/dashboard/db/freifunk-dreilandereck-history?theme=light',
-        'image': 'https://map.freifunk-3laendereck.net/grafana/render/d-solo/000000008/freifunk-dreilandereck-history?refresh=5m&orgId=1&panelId=1&width=528&height=290&theme=light',
-        'title': 'Bild mit Tagesstatistik'
-      },
-      {
-        'name': 'Wochenstatistik',
-        'href': 'https://map.freifunk-3laendereck.net/grafana/dashboard/db/freifunk-dreilandereck-history?theme=light',
-        'image': 'https://map.freifunk-3laendereck.net/grafana/render/d-solo/000000008/freifunk-dreilandereck-history?refresh=5m&orgId=1&panelId=2&width=528&height=290&theme=light',
-        'title': 'Bild mit Wochenstatistik'
+        'name': 'Globale Statistik',
+        'href': 'https://regensburg.freifunk.net/netz/statistik',
+        'image': 'https://grafana.regensburg.freifunk.net/render/d-solo/000000028/globals?panelId=2&from=now-7d&&width=650&height=350&theme=light&_t={TIME}',
+        'title': 'Globale Statistik - weiteren Statistiken'
       }
     ],
     // Array of data provider are supported
     'dataPath': [
-      'https://develop.freifunkkarte.de/map-data/ff3l/'
+      'https://regensburg.freifunk.net/data/'
     ],
-    'siteName': 'Freifunk Dreiländereck',
+    'siteName': 'Freifunk Regensburg',
     'mapLayers': [
       {
-        'name': 'Carto light',
-        'url': 'https://develop.freifunkkarte.de/cartolite/{z}/{x}/{y}.png',
+        'name': 'Freifunk Regensburg',
+        // Please ask Freifunk Regensburg before using its tile server c- example with retina tiles
+        'url': 'https://{s}.tiles.ffrgb.net/{z}/{x}/{y}{retina}.png',
         'config': {
-          'type': 'osm',
-          'attribution': '&copy; OpenStreetMap contributors, &copy; CartoDB',
-          'maxZoom': 19
+          'maxZoom': 20,
+          'subdomains': '1234',
+          'attribution': '<a href="http://www.openmaptiles.org/" target="_blank">&copy; OpenMapTiles</a> <a href="http://www.openstreetmap.org/about/" target="_blank">&copy; OpenStreetMap contributors</a>',
+          'start': 6
         }
       },
       {
-        'name': 'Carto dark',
-        'url': 'https://develop.freifunkkarte.de/cartodark/{z}/{x}/{y}.png',
+        'name': 'Freifunk Regensburg Night',
+        // Please ask Freifunk Regensburg before using its tile server - example with retina and dark tiles
+        'url': 'https://{s}.tiles.ffrgb.net/n/{z}/{x}/{y}{retina}.png',
         'config': {
-          'type': 'osm',
-          'attribution': '&copy; OpenStreetMap contributors, &copy; CartoDB',
-          'maxZoom': 19
-        }
-      },
-      {
-        'name': 'Openstreetmap',
-        'url': 'https://develop.freifunkkarte.de/tiles/{z}/{x}/{y}.png',
-        'config': {
-          'type': 'osm',
-          'attribution': 'Tiles CC-BY-SA OpenStreetMap',
-          'maxZoom': 19
+          'maxZoom': 20,
+          'subdomains': '1234',
+          'attribution': ' <a href="http://www.openmaptiles.org/" target="_blank">&copy; OpenMapTiles</a> <a href="http://www.openstreetmap.org/about/" target="_blank">&copy; OpenStreetMap contributors</a>',
+          'mode': 'night',
+          'start': 19,
+          'end': 7
         }
       },
       {
@@ -65,19 +81,32 @@ module.exports = function () {
         }
       },
       {
+        'name': 'HERE',
+        // Please use your own API key - Free plan is on right side after the pay plans
+        'url': 'https://{s}.base.maps.api.here.com/maptile/2.1/maptile/newest/normal.day/{z}/{x}/{y}/256/png8?app_id=YOUR_KEY&app_code=YOUR_CODE&lg=deu',
+        'config': {
+          'attribution': 'Map &copy; 1987-2014 <a href="http://developer.here.com">HERE</a>',
+          'subdomains': '1234',
+          'maxZoom': 20
+        }
+      },
+      {
         'name': 'Esri.WorldImagery',
         'url': '//server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}',
         'config': {
           'maxZoom': 20,
           'attribution': 'Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community'
-         }
+        }
       },
       {
-        'name': 'OpenTopoMap',
-        'url': 'https://develop.freifunkkarte.de/opentopo/{z}/{x}/{y}.png',
+        'name': 'HERE.hybridDay',
+        // Please use your own API key - Free plan is on right side after the pay plans
+        'url': 'https://{s}.aerial.maps.api.here.com/maptile/2.1/maptile/newest/{variant}/{z}/{x}/{y}/256/png8?app_id=YOUR_KEY&app_code=YOUR_CODE&lg=deu',
         'config': {
-          'attribution': 'Kartendaten: © OpenStreetMap-Mitwirkende, SRTM | Kartendarstellung: © OpenTopoMap (CC-BY-SA)',
-          'maxZoom': 17
+          'attribution': 'Map &copy; 1987-2014 <a href="http://developer.here.com">HERE</a>',
+          'subdomains': '1234',
+          'variant': 'hybrid.day',
+          'maxZoom': 20
         }
       }
     ],
@@ -85,172 +114,33 @@ module.exports = function () {
     'fixedCenter': [
       // Northwest
       [
-        47.8795,
-        7.5407
+        49.3522,
+        11.7752
       ],
       // Southeast
       [
-        47.5042,
-        7.9994
+        48.7480,
+        12.8917
       ]
     ],
-    'allCommunities': {
-      'name': 'Gesamtkarte',
-      'url': '/'
-    },
     'domainNames': [
       {
-        'domain': 'default',
-        'name': 'Freifunk Dreiländereck',
-        'url': 'https://map.freifunk-3laendereck.net/ff3l/'
+        'domain': 'ffrgb-bat15',
+        'name': 'Regensburg'
       },
       {
-        'domain': 'ff3l',
-        'name': 'Freifunk Dreiländereck'
-      },
-      {
-        'domain': 'hoho',
-        'name': 'Hochrhein-Hotzenwald',
-        'url': 'https://map.freifunk-3laendereck.net/ff3l-hoho/'
-      },
-      {
-        'domain': 'wtk',
-        'name': 'Waldshut-Tiengen-Klettgau',
-        'url': 'https://map.freifunk-3laendereck.net/ff3l-wtk/'
-      },
-      {
-        'domain': 'ff3l-hoho',
-        'name': 'Hochrhein-Hotzenwald'
-      },
-      {
-        'domain': 'ff3l-wtk',
-        'name': 'Waldshut-Tiengen-Klettgau'
-      },
-      {
-        'domain': 'wald',
-        'name': 'Südschwarzwald',
-        'url': 'https://map.freifunk-3laendereck.net/ff3l-wald/'
-      },
-      {
-        'domain': 'wiese',
-        'name': 'Wiesental',
-        'url': 'https://map.freifunk-3laendereck.net/ff3l-wiese/'
-      },
-      {
-        'domain': 'ff3l-wiese',
-        'name': 'Wiesental'
-      },
-      {
-        'domain':'loe',
-        'name': 'Lörrach-Oberrhein',
-        'url': 'https://map.freifunk-3laendereck.net/ff3l-loe/'
-      },
-      {
-        'domain':'3land',
-        'name': 'Dreiland',
-        'url': 'https://map.freifunk-3laendereck.net/ff3l-3land/'
-      },
-      {
-        'domain': 'ref',
-        'name': 'Refugees',
-        'url': 'https://map.freifunk-3laendereck.net/ff3l-ref/'
-      },
-      {
-        'domain': 'test',
-        'name': 'Testnetz',
-        'url': 'https://map.freifunk-3laendereck.net/ff3l-test/'
-      },
-      {
-        'domain': 'nalb',
-        'name': 'Neckar-Alb',
-        'url': 'https://map.freifunk-3laendereck.net/ff3l-nalb/'
-      },
-      {
-        'domain': 'swb',
-        'name': 'Schwarzwald-Baar',
-        'url': 'https://map.freifunk-3laendereck.net/ff3l-swb/'
-      },
-      {
-        'domain': 'ffng',
-        'name': 'Nordschwarzwald-Gäu',
-        'url': 'https://map.freifunk-3laendereck.net/ffng/'
-      },
-      {
-        'site': 'ff3l-ng',
-        'domain': 'ff3l-ng',
-        'name': 'Nordschwarzwald-Gäu'
-      },
-      {
-        'domain': 'ff3l-wald',
-        'name': 'Südschwarzwald'
-      },
-      {
-        'domain':'ff3l-3land',
-        'name': 'Dreiland'
-      },
-      {
-        'domain': 'fftut',
-        'name': 'Tuttlingen',
-        'url': 'https://map.freifunk-3laendereck.net/fftut/'
+        'domain': 'ffrgb',
+        'name': 'Regensburg'
       }
     ],
     'linkList': [
       {
         'title': 'Impressum',
-        'href': 'https://freifunk-3laendereck.net/impressum-mehr/',
-        'target': '_blank'
+        'href': '/verein/impressum/'
       },
       {
         'title': 'Datenschutz',
-        'href': 'https://freifunk-3laendereck.net/rechtliche-hinweise/',
-        'target': '_blank'
-      },
-      {
-        'title': 'Knotenliste',
-        'href': 'https://www.knotenliste.de/index.html',
-        'target': '_blank'
-      }
-    ],
-    geo: [
-      {
-        json: function () {
-          return require('helper').getJSON('https://geojson.freifunkkarte.de/hoho.geojson').then(function (result) {
-            return result.features ? result.features : false;
-          }, function () {
-            return false;
-          });
-        },
-        option: {
-          style: {
-            color: '#e23535',
-            weight: 5,
-            opacity: 0.4,
-            fill: false,
-//            fillColor: '#6de922',
-//            fillOpacity: 0.05,
-            interactive: false
-          }
-        }
-      },
-      {
-        json: function () {
-          return require('helper').getJSON('https://geojson.freifunkkarte.de/3land.geojson').then(function (result) {
-            return result.features ? result.features : false;
-          }, function () {
-            return false;
-          });
-        },
-        option: {
-          style: {
-            color: '#6de922',
-            weight: 5,
-            opacity: 0.4,
-            fill: false,
-//            fillColor: '#e23535',
-//            fillOpacity: 0.05,
-            interactive: false
-          }
-        }
+        'href': '/verein/datenschutz/'
       }
     ]
   };
